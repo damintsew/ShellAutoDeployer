@@ -12,7 +12,7 @@ cd $BASE_PATH
 echo Cloninng repo $GIT_URL
 git clone $1
 
-COMMAND="$LOCAL_DIR/bin/$(APPLICATION_NAME.sh) $1 $2 >> $LOCAL_DIR/log_executor.log 2>&1"
+COMMAND="$LOCAL_DIR/bin/$(APPLICATION_NAME).cron $1 $2 >> $LOCAL_DIR/log_executor.log 2>&1"
 SCHEDULE="*/1 * * * * root"
 
 echo "$SCHEDULE" $COMMAND
