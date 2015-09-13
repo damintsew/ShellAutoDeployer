@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ./NodeExecutorService.sh
+source $CURRENT_DIR/NodeExecutorService.sh
 
 echo "Process runner initialized"
 
