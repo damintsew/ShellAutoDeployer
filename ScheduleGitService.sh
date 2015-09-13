@@ -17,4 +17,4 @@ SCHEDULE="*/1 * * * * root"
 
 echo "$SCHEDULE" $COMMAND
 
-echo "$SCHEDULE" $COMMAND > /etc/cron.d/$(APPLICATION_NAME).cron
+echo "$SCHEDULE" $COMMAND > /etc/cron.d/$APPLICATION_NAME.cron
