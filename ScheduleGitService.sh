@@ -2,7 +2,7 @@
 
 GIT_URL=$1
 BASE_PATH=$2
-APPLICATION_NAME=$(basename $GIT_URL)
+APPLICATION_NAME=$(basename $BASE_PATH)
 
 LOCAL_DIR=$(pwd)
 
