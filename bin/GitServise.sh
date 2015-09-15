@@ -8,6 +8,7 @@ BASE_PATH=$2
 CURRENT_DIR=$(dirname $0)
 
 source $CURRENT_DIR/ProgrammRestartService.sh
+source $CURRENT_DIR/Utills.sh
 
 
 echo Configured GIT_URL=$GIT_URL
