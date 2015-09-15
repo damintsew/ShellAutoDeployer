@@ -11,7 +11,7 @@ FindConfigFile() {
 
 	if [ -z $CONFIG_FILE ]; then
 		echo "Config file not found!"
-		return "-1"
+		return [-1]
 	fi
 	
     echo Founded config file: $CONFIG_FILE
