@@ -1,5 +1,5 @@
 
 message() {
 
-	echo $(date) $1
+	echo "$(date) $1"
 }
