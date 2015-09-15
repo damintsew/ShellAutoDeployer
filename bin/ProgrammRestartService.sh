@@ -32,6 +32,7 @@ RestartApplication() {
 	functionResult=$?
 	
 	if [ $functionResult -eq 1 ]; then
+		message Exiting application
 		return 1
 	fi
 	
