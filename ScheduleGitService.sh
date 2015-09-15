@@ -4,7 +4,7 @@ GIT_URL=$1
 BASE_PATH=$2
 APPLICATION_NAME=$(basename $GIT_URL)
 
-LOCAL_DIR=$(dirname $0)
+LOCAL_DIR=$(pwd)/$line
 
 echo Changing directory to $BASE_PATH
 cd $BASE_PATH
