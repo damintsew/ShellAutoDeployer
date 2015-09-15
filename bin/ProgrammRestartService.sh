@@ -2,11 +2,11 @@
 
 source $CURRENT_DIR/NodeExecutorService.sh
 
-echo "Process runner initialized"
+message "Process runner initialized"
 
 
 FindConfigFile() {
-    echo "Searching config file in $BASE_PATH"
+    message "Searching config file in $BASE_PATH"
     CONFIG_FILE="$(find $BASE_PATH ! -regex ".*[/]\.git[/]?.*" -name config.sh)"
 
 	if [ -z $CONFIG_FILE ]; then
@@ -14,8 +14,8 @@ FindConfigFile() {
 		return 1
 	fi
 	
-    echo Founded config file: $CONFIG_FILE
-	echo Read config file $(cat $CONFIG_FILE)
+    message Founded config file: $CONFIG_FILE
+	message Read config file $(cat $CONFIG_FILE)
     source $CONFIG_FILE      
 
 	return 0
@@ -35,7 +35,7 @@ RestartApplication() {
 		return 1
 	fi
 	
-	echo "Restarting application"
+	message "Restarting application"
 	
 	if [ $APP_TYPE="node"]; then
 		RunNodeApplication

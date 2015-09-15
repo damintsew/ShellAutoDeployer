@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#GIT_URL="https://github.com/damintsew/health.git"
-#BASE_PATH="/home/ec2-user/health"
+echo ---------------------------------------------------------------------
 
 GIT_URL=$1
 BASE_PATH=$2
@@ -38,3 +37,5 @@ elif [ $REMOTE = $BASE ]; then
 else
     echo "Diverged"
 fi
+
+echo ---------------------------------------------------------------------
