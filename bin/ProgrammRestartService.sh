@@ -32,7 +32,7 @@ RestartApplication() {
 	functionResult=$?
 	
 	if [ $functionResult -eq 1 ]; then
-		return -1
+		return 1
 	fi
 	
 	echo "Restarting application"
