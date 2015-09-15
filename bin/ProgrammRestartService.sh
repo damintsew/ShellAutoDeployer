@@ -26,7 +26,10 @@ RunNodeApplication() {
 
 RestartApplication() {
     
-	if [ FindConfigFile -eq -1 ]; then
+	FindConfigFile
+	functionResult=$?
+	
+	if [ $functionResult -eq -1 ]; then
 		return -1
 	fi
 	
