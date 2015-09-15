@@ -25,10 +25,12 @@ RunNodeApplication() {
 }
 
 RestartApplication() {
-    echo "Restarting application"
+    
 	if [ FindConfigFile -eq -1 ]; then
 		return -1
 	fi
+	
+	echo "Restarting application"
 	
 	if [ $APP_TYPE="node"]; then
 		RunNodeApplication
