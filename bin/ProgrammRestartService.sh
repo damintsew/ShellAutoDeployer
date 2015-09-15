@@ -9,7 +9,7 @@ FindConfigFile() {
     echo "Searching config file in $BASE_PATH"
     CONFIG_FILE="$(find $BASE_PATH ! -regex ".*[/]\.git[/]?.*" -name config.sh)"
 
-	if [ ! -f $CONFIG_FILE ]; then
+	if [ -z $CONFIG_FILE ]; then
 		echo "Config file not found!"
 		return -1
 	fi
