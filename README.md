@@ -1,0 +1,3 @@
+# ShellAutoDeployer
+
+I don't remember what was the idea here...
